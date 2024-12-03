@@ -1,0 +1,204 @@
+/* Reset general */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+
+    background-color: #f8f8f8;
+}
+
+.container-fluid {
+    display: flex;
+    height: 100vh; /* Toda la altura de la ventana */
+    margin: 0 auto;
+    max-width: 1200px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+/* Barra lateral fija */
+.sidebar {
+    width: 40%; /* La barra ocupa un 25% del ancho total */
+    background-color: #f8f8f8;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Scroll si el contenido excede */
+    box-sizing: border-box;
+}
+
+.sidebar .profile-picture {
+    width: 100%;
+    max-width: 137px;
+    margin: 0 auto 15px;
+    display: block;
+    border-radius: 0%;
+}
+
+/* Encabezados y títulos */
+.sidebar h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sidebar .title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.sidebar .subtitulo {
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.section-divider {
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    margin-bottom: 10px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #007bff;
+    display: block;
+    padding: 5px 0;
+}
+
+.navigation li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Botones de contacto */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.contact-buttons a {
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 3px;
+    color: white;
+    flex: 1;
+    max-width: 80px;
+}
+
+.contact-buttons .btn-primary {
+    background-color: #0f7aec;
+    border: none;
+}
+
+.contact-buttons .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+/* Contenido desplazable */
+.content {
+    width: 60%; /* La parte derecha ocupa el 75% restante */
+    padding: 20px;
+    overflow-y: hidden; /* Scroll si el contenido excede */
+    height: 100vh; /* Asegura que ocupa toda la altura */
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.content h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.content p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.content ul{
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.content ul li{
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f8f8f8;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: row;  /* Coloca la imagen a la izquierda y el contenido a la derecha */
+    align-items: center;
+    margin-bottom: 1.5rem;  /* Espacio entre tarjetas */
+    border: 1px solid #ddd;  /* Borde sutil */
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.project-card img {
+    max-width: 150px;  /* Tamaño máximo de la imagen */
+    border-radius: 5px;
+    margin-right: 20px;  /* Espacio entre la imagen y el contenido */
+}
+
+.project-card .card-body {
+    flex: 1;  /* La descripción ocupa el resto del espacio */
+}
+
+.project-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.project-card .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+/* Efecto de hover para agrandar la tarjeta */
+.project-card {
+    transition: transform 0.3s ease-in-out; /* Suaviza el efecto */
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Agranda la tarjeta un 5% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Añade una sombra sutil */
+}
+
+
