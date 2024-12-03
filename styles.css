@@ -12,7 +12,7 @@ body {
 
 .container-fluid {
     display: flex;
-    height: 100vh; /* Toda la altura de la ventana */
+    height: 100vh; 
     margin: 0 auto;
     max-width: 1200px;
     box-sizing: border-box;
@@ -21,17 +21,17 @@ body {
 
 /* Barra lateral fija */
 .sidebar {
-    width: 40%; /* La barra ocupa un 25% del ancho total */
+    width: 40%; 
     background-color: #f8f8f8;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Scroll si el contenido excede */
+    overflow: hidden; 
     box-sizing: border-box;
 }
 
 .sidebar .profile-picture {
     width: 100%;
-    max-width: 137px;
+    max-width: 127px;
     margin: 0 auto 15px;
     display: block;
     border-radius: 0%;
@@ -120,10 +120,10 @@ body {
 
 /* Contenido desplazable */
 .content {
-    width: 60%; /* La parte derecha ocupa el 75% restante */
+    width: 60%; 
     padding: 20px;
-    overflow-y: hidden; /* Scroll si el contenido excede */
-    height: 100vh; /* Asegura que ocupa toda la altura */
+    overflow-y: hidden; 
+    height: 100vh; 
     background-color: #f8f8f8;
     box-sizing: border-box;
     overflow-y: auto;
@@ -164,22 +164,22 @@ html {
 
 .project-card {
     display: flex;
-    flex-direction: row;  /* Coloca la imagen a la izquierda y el contenido a la derecha */
+    flex-direction: row;  
     align-items: center;
-    margin-bottom: 1.5rem;  /* Espacio entre tarjetas */
-    border: 1px solid #ddd;  /* Borde sutil */
+    margin-bottom: 1.5rem;  
+    border: 1px solid #ddd;  
     border-radius: 8px;
     padding: 10px;
 }
 
 .project-card img {
-    max-width: 150px;  /* Tamaño máximo de la imagen */
+    max-width: 150px;  
     border-radius: 5px;
-    margin-right: 20px;  /* Espacio entre la imagen y el contenido */
+    margin-right: 20px;  
 }
 
 .project-card .card-body {
-    flex: 1;  /* La descripción ocupa el resto del espacio */
+    flex: 1;  
 }
 
 .project-card .card-title {
@@ -191,14 +191,14 @@ html {
     font-size: 1rem;
     color: #555;
 }
-/* Efecto de hover para agrandar la tarjeta */
+
 .project-card {
-    transition: transform 0.3s ease-in-out; /* Suaviza el efecto */
+    transition: transform 0.3s ease-in-out; 
 }
 
 .project-card:hover {
-    transform: scale(1.05); /* Agranda la tarjeta un 5% */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Añade una sombra sutil */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 
