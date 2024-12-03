@@ -1,4 +1,3 @@
-// Espera a que el documento se haya cargado
 document.addEventListener('DOMContentLoaded', function() {
 
     // Event listener para el botón que carga los proyectos
@@ -6,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const githubApiUrl = 'https://api.github.com/users/EstebanGarciaM/repos'; // Cambia "tuusuario" por tu nombre de usuario de GitHub
         document.getElementById('api-results').innerHTML = '<p>Cargando proyectos...</p>'; // Mensaje temporal mientras se cargan los proyectos
 
-        // Solicitar los repositorios de GitHub mediante AJAX usando jQuery
         $.ajax({
             url: githubApiUrl,
             method: 'GET',
